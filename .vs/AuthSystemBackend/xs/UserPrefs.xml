@@ -5,10 +5,10 @@
         <State name="__root__">
           <Node name="AuthSystemBackend" expanded="True">
             <Node name="AuthSystemBackend" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="UserModel.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
               </Node>
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
