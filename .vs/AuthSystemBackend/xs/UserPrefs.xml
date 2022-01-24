@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{47C3302A-8292-46A5-B215-78292A5C20FA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AuthSystemBackend/Database.cs">
+    <Files>
+      <File FileName="AuthSystemBackend/Models/UserModel.cs" Line="19" Column="1" />
+      <File FileName="AuthSystemBackend/Database.cs" Line="212" Column="18" />
+      <File FileName="AuthSystemBackend/Controllers/UsersController.cs" />
+      <File FileName="AuthSystemBackend/Controllers/AuthController.cs" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.AuthSystemBackend PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
