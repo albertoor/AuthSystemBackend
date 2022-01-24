@@ -47,6 +47,7 @@ namespace AuthSystemBackend.Controllers
         [HttpPost, Route("create")]
         public ActionResult Post([FromBody] UserModel user)
         {
+            //Console.WriteLine(user.UserName);
             try
             {
                 database.CreateUser(user);

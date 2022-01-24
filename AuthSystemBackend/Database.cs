@@ -109,6 +109,7 @@ namespace AuthSystemBackend
         // Agregar nuevo usuario
         public void CreateUser(UserModel user)
         {
+            Console.WriteLine(user.UserName);
             MySqlTransaction transaction = null;
             using (MySqlConnection conn = new MySqlConnection(connStr))
             {
@@ -187,8 +188,8 @@ namespace AuthSystemBackend
                     conn.Open();
                     transaction = conn.BeginTransaction();
 
-                    //string SQL = "INSERT INTO users VALUES (null,@name, @username, @mail, @phone, @address, @postalCode, @typeOfUser, @state, @city, @password);";
-                    string SQL = "CALL UpdateUser(@id, @name, @username, @mail, @phone, @address, @postalCode, @typeOfUser, @state, @city, @password);";
+                    //string SQL = "INSERT INTO users VALUES (null, @name, @username, @mail, @phone, @address, @postalCode, @typeOfUser, @state, @city, @password);";
+                    string SQL = "CALL UpdateUser(@id, @name, @username, @mail, @phone, @address, @postalCode, @typeOfUser, @state, @city);";
                     MySqlCommand cmd = new MySqlCommand(SQL, conn);
 
                     // pasando valores en los parametros
@@ -202,7 +203,6 @@ namespace AuthSystemBackend
                     cmd.Parameters.AddWithValue("@typeOfUser", user.TypeOfUser);
                     cmd.Parameters.AddWithValue("@state", user.State);
                     cmd.Parameters.AddWithValue("@city", user.City);
-                    cmd.Parameters.AddWithValue("@password", user.Password);
                     cmd.ExecuteNonQuery(); // Ejecuta la query
 
                     transaction.Commit();
